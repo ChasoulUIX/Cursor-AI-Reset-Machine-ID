@@ -26,7 +26,7 @@ A tool to reset machine ID on both Windows and Linux systems. This tool helps yo
 
 1. Download the Linux version:
    ```bash
-   curl -o reset_machine_id_linux.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id_linux.py
+   curl -o reset_machine_id.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id_linux.py
    curl -o run.linux https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run.linux
    chmod +x run.linux
    ```
