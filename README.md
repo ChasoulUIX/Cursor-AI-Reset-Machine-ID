@@ -1,23 +1,23 @@
-# Machine ID Reset Tool
+# Tool Reset Machine ID
 
-A tool to reset machine ID on both Windows and Linux systems. This tool helps you generate a new machine ID, which can be useful for various purposes such as system identification and licensing.
+Tool buat reset Machine ID di Windows dan Linux. Tool ini bantu kamu generate Machine ID baru, yang bisa dipake buat berbagai keperluan kayak identifikasi sistem dan lisensi.
 
-## ⚠️ Warning
+## ⚠️ Peringatan
 
-- Always backup your important data before using this tool
-- Some applications might need to be reinstalled after resetting machine ID
-- Make sure you understand the implications before proceeding
+- Jangan lupa backup data penting kamu sebelum pake tool ini ya
+- Beberapa aplikasi mungkin perlu diinstall ulang setelah reset Machine ID
+- Pastiin kamu udah paham konsekuensinya sebelum jalanin
 
-## 🚀 Quick Start
+## 🚀 Cara Cepet Pake
 
-### Windows Users (Online Method)
+### Buat User Windows (Cara Online)
 
-Run this command in PowerShell (Run as Administrator):
+Jalanin command ini di PowerShell (Run as Administrator):
 ```powershell
 irm https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run_windows_online.ps1 | iex
 ```
 
-### Linux Users
+### Buat User Linux
 
 ```bash
 curl -o reset_machine_id.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id.py
@@ -26,42 +26,42 @@ chmod +x run.linux
 sudo ./run.linux
 ```
 
-## 📋 Requirements
+## 📋 Yang Diperluin
 
 ### Windows
 - Windows 10/11
 - PowerShell
-- Python 3.x (will be checked and installed automatically if needed)
+- Python 3.x (bakal dicek dan diinstall otomatis kalo belum ada)
 
 ### Linux
 - Python 3.x
-- systemd (most modern Linux distributions)
+- systemd (kebanyakan distro Linux modern)
 
-## ⚙️ How it Works
+## ⚙️ Cara Kerjanya
 
 ### Windows
-- Modifies the MachineGuid in Windows Registry
-- Creates automatic registry backup
-- Resets Windows Identity
-- Located at: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
+- Ngubah MachineGuid di Windows Registry
+- Bikin backup registry otomatis
+- Reset Windows Identity
+- Lokasinya di: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
 
 ### Linux
-- Removes existing machine-id
-- Generates new machine-id using systemd-machine-id-setup
-- Located at: `/etc/machine-id`
+- Hapus machine-id yang ada
+- Generate machine-id baru pake systemd-machine-id-setup
+- Lokasinya di: `/etc/machine-id`
 
-## 🔄 After Reset
+## 🔄 Setelah Reset
 
-- Windows: Restart your computer
-- Linux: Some services might need to be restarted
+- Windows: Restart komputer kamu
+- Linux: Beberapa service mungkin perlu di-restart
 
-## 📝 License
+## 📝 Lisensi
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Project ini pake lisensi MIT - cek file [LICENSE](LICENSE) buat detailnya.
 
 ## ⚠️ Disclaimer
 
-This tool is provided as-is. Use at your own risk. The authors are not responsible for any damage or issues that may arise from using this tool.
+Tool ini disediain apa adanya. Pake dengan resiko sendiri ya. Pembuat gak bertanggung jawab kalo ada masalah atau kerusakan yang terjadi karena pake tool ini.
 
 ## 🔗 Repository
 
