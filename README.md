@@ -1,6 +1,21 @@
+<!--
+description: Tool Reset Machine ID untuk Cursor AI - Solusi masalah "Too many free trial accounts used on this machine", Cursor AI Premium, Cursor AI Pro, dan reset Machine ID
+keywords: Cursor AI Reset, Cursor AI MachineID, Cursor AI Premium, Cursor AI Pro, Cursor AI Help, Too many free trial accounts, Machine ID reset tool
+-->
+
 # Tool Reset Machine ID
 
 Tool buat reset Machine ID di Windows dan Linux. Tool ini bantu kamu generate Machine ID baru, yang bisa dipake buat berbagai keperluan kayak identifikasi sistem dan lisensi.
+
+## 🔍 Solusi Masalah Cursor AI
+
+Tool ini bisa jadi solusi buat masalah-masalah berikut:
+- "Too many free trial accounts used on this machine"
+- Reset Machine ID Cursor AI
+- Cursor AI Premium activation
+- Cursor AI Pro subscription
+- Cursor AI Help troubleshooting
+- Cursor AI MachineID reset
 
 ## ⚠️ Peringatan
 
