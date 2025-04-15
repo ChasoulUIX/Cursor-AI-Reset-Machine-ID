@@ -4,6 +4,21 @@ import uuid
 import sys
 import ctypes
 
+def print_banner():
+    banner = """
+ ██████╗██╗  ██╗ █████╗ ███████╗ ██████╗ ██╗   ██╗██╗     ██╗   ██╗██╗██╗  ██╗
+██╔════╝██║  ██║██╔══██╗██╔════╝██╔═══██╗██║   ██║██║     ██║   ██║██║╚██╗██╔╝
+██║     ███████║███████║███████╗██║   ██║██║   ██║██║     ██║   ██║██║ ╚███╔╝ 
+██║     ██╔══██║██╔══██║╚════██║██║   ██║██║   ██║██║     ██║   ██║██║ ██╔██╗ 
+╚██████╗██║  ██║██║  ██║███████║╚██████╔╝╚██████╔╝███████╗╚██████╔╝██║██╔╝ ██╗
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝╚═╝  ╚═╝
+    """
+    print("\033[95m" + banner + "\033[0m")  # Warna ungu
+    print("\033[93m" + "Support Owner:".center(80) + "\033[0m")  # Warna kuning
+    print("\033[96m" + "Instagram: @chasoul.uix".center(80) + "\033[0m")  # Warna cyan
+    print("\033[96m" + "Portfolio: https://chasouluix.my.id".center(80) + "\033[0m")  # Warna cyan
+    print("\033[92m" + "=" * 80 + "\033[0m\n")  # Garis pemisah hijau
+
 def is_admin():
     try:
         return ctypes.windll.shell32.IsUserAnAdmin()
@@ -40,4 +55,5 @@ def reset_machine_id():
         sys.exit(1)
 
 if __name__ == "__main__":
+    print_banner()
     reset_machine_id() 

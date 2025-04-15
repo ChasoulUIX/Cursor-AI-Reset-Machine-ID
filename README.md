@@ -10,7 +10,14 @@ A tool to reset machine ID on both Windows and Linux systems. This tool helps yo
 
 ## 🚀 Quick Start
 
-### For Windows Users
+### Option 1: Online Version (Recommended)
+1. Open [Google Colab Notebook](https://colab.research.google.com/github/ChasoulUIX/Cursor-AI-Reset-Machine-ID/blob/main/reset_machine_id.ipynb)
+2. Run the notebook
+3. Follow the instructions displayed
+
+### Option 2: Local Installation
+
+#### For Windows Users
 
 1. Download the Windows version:
    ```powershell
@@ -22,7 +29,7 @@ A tool to reset machine ID on both Windows and Linux systems. This tool helps yo
    - Right-click on `run.windows`
    - Select "Run as administrator"
 
-### For Linux Users
+#### For Linux Users
 
 1. Download the Linux version:
    ```bash
