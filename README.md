@@ -10,65 +10,39 @@ A tool to reset machine ID on both Windows and Linux systems. This tool helps yo
 
 ## 🚀 Quick Start
 
-### Option 1: Online Version (Recommended)
-1. Open [Google Colab Notebook](https://colab.research.google.com/github/ChasoulUIX/Cursor-AI-Reset-Machine-ID/blob/main/reset_machine_id.ipynb)
-2. Run the notebook
-3. Follow the instructions displayed
+### Windows Users (Online Method)
 
-### Option 2: Local Installation
+Run this command in PowerShell (Run as Administrator):
+```powershell
+irm https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run_windows_online.ps1 | iex
+```
 
-#### For Windows Users
+### Linux Users
 
-1. Download the Windows version:
-   ```powershell
-   curl -o reset_machine_id_windows.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id_windows.py
-   curl -o run.windows https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run.windows
-   ```
-
-2. Run as Administrator:
-   - Right-click on `run.windows`
-   - Select "Run as administrator"
-
-#### For Linux Users
-
-1. Download the Linux version:
-   ```bash
-   curl -o reset_machine_id.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id.py
-   curl -o run.linux https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run.linux
-   chmod +x run.linux
-   ```
-
-2. Run with sudo:
-   ```bash
-   sudo ./run.linux
-   ```
+```bash
+curl -o reset_machine_id.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id.py
+curl -o run.linux https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run.linux
+chmod +x run.linux
+sudo ./run.linux
+```
 
 ## 📋 Requirements
 
-- Python 3.x
-- Administrator/Root privileges
-- Windows: `pywin32` package (`pip install pywin32`)
-- Linux: `systemd` (most modern Linux distributions)
-
-## 🔧 Installation
-
 ### Windows
-```powershell
-# Install required Python package
-pip install pywin32
-```
+- Windows 10/11
+- PowerShell
+- Python 3.x (will be checked and installed automatically if needed)
 
 ### Linux
-```bash
-# Make sure systemd is installed (usually pre-installed)
-sudo apt-get update
-sudo apt-get install systemd
-```
+- Python 3.x
+- systemd (most modern Linux distributions)
 
 ## ⚙️ How it Works
 
 ### Windows
 - Modifies the MachineGuid in Windows Registry
+- Creates automatic registry backup
+- Resets Windows Identity
 - Located at: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
 
 ### Linux
@@ -91,4 +65,9 @@ This tool is provided as-is. Use at your own risk. The authors are not responsib
 
 ## 🔗 Repository
 
-[https://github.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID](https://github.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID) 
+[https://github.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID](https://github.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID)
+
+## 👨‍💻 Support Owner
+
+- Instagram: [@chasoul.uix](https://instagram.com/chasoul.uix)
+- Portfolio: [https://chasouluix.my.id](https://chasouluix.my.id) 

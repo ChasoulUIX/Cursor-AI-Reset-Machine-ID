@@ -1,0 +1,3 @@
+$code = (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id_windows.py").Content
+$encoded = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($code))
+Start-Process -Verb RunAs powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('$encoded')) | python -`"" 
