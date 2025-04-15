@@ -1,0 +1,15 @@
+@echo off
+:: Check for admin privileges
+NET SESSION >nul 2>&1
+if %errorLevel% == 0 (
+    goto :run
+) else (
+    echo Please run this script as Administrator
+    echo Right-click on the script and select "Run as administrator"
+    pause
+    exit /b 1
+)
+
+:run
+python reset_machine_id_windows.py
+pause 
