@@ -20,8 +20,6 @@ Tool ini bisa jadi solusi buat masalah-masalah berikut:
 ## ⚠️ Peringatan
 
 - Jangan lupa backup data penting kamu sebelum pake tool ini ya
-- Beberapa aplikasi mungkin perlu diinstall ulang setelah reset Machine ID
-- Pastiin kamu udah paham konsekuensinya sebelum jalanin
 
 ## 🚀 Cara Cepet Pake
 
