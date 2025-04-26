@@ -69,13 +69,26 @@ def reset_machine_id():
         backup_machine_id()
         
         # Remove existing machine-id
-        subprocess.run(['rm', '/etc/machine-id'], check=True)
+        subprocess.run(['rm', '-f', '/etc/machine-id'], check=True)
         print_success("Successfully removed /etc/machine-id")
+        
+        # Remove D-Bus machine-id if it exists
+        dbus_machine_id = '/var/lib/dbus/machine-id'
+        if os.path.exists(dbus_machine_id):
+            subprocess.run(['rm', '-f', dbus_machine_id], check=True)
+            print_success("Successfully removed D-Bus machine-id")
+        else:
+            print_info("D-Bus machine-id not found - skipping removal")
         
         # Generate new machine-id
         subprocess.run(['systemd-machine-id-setup'], check=True)
         new_id = get_current_machine_id()
         print_success(f"Successfully generated new machine-id: {new_id}")
+        
+        # Create symlink for D-Bus machine-id
+        if not os.path.exists(dbus_machine_id):
+            subprocess.run(['ln', '-s', '/etc/machine-id', dbus_machine_id], check=True)
+            print_success("Created symlink for D-Bus machine-id")
         
         print_success("Machine ID reset completed successfully!")
         print("\nChanges made:")

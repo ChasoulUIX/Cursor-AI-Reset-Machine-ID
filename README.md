@@ -33,10 +33,7 @@ irm https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main
 ### Buat User Linux
 
 ```bash
-curl -o reset_machine_id.py https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id.py
-curl -o run.linux https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/run.linux
-chmod +x run.linux
-sudo ./run.linux
+sudo curl -s https://raw.githubusercontent.com/ChasoulUIX/Cursor-AI-Reset-Machine-ID/main/reset_machine_id.py | sudo python3
 ```
 
 ## 📋 Yang Diperluin
